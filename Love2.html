@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0027)http://itzoo.info/love.html -->
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Love</title>
+        
+        <link type="text/css" rel="stylesheet" href="./Love_files/default.css">
+        <script type="text/javascript" src="./Love_files/jquery.min.js"></script>
+        <script type="text/javascript" src="./Love_files/jscex.min.js"></script>
+        <script type="text/javascript" src="./Love_files/jscex-parser.js"></script>
+        <script type="text/javascript" src="./Love_files/jscex-jit.js"></script>
+        <script type="text/javascript" src="./Love_files/jscex-builderbase.min.js"></script>
+        <script type="text/javascript" src="./Love_files/jscex-async.min.js"></script>
+        <script type="text/javascript" src="./Love_files/jscex-async-powerpack.min.js"></script>
+        <script type="text/javascript" src="./Love_files/functions.js" charset="utf-8"></script>
+        <script type="text/javascript" src="./Love_files/love.js" charset="utf-8"></script>
+		
+		<!-- boostrap -->
+
+    </head>
+    <body>
+<!--    <video  width="658" height="444" poster="http://www.youname.com/images/first.png" autoplay="autoplay" preload="none" controls="controls">
+	<source  src="https://www.bilibili.com/video/BV1jF411B7sw?t=19.7" />
+	<source  src="https://www.bilibili.com/video/BV1jF411B7sw?t=19.7" />
+	</video > -->
+    <!--  调用 -->
+    <p onclick="playMedia()"></p>
+	
+	
+		<!--  弹出框modal代码 -->
+    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" align="center">
+    		
+    		<div class="modal-dialog" >
+    			<div class="modal-content">
+    
+    	            <div class="modal-body" style="height:500px">
+    		            <video controls="controls" width="50%" height="100%" autoplay="autoplay"  volume="1" id="myVideo"  loop="loop">
+    						<source id="media_src" src="http://r4xk3jjks.hn-bkt.clouddn.com/E%3A/%E8%99%B9%E7%
+							83%A8%E5%91%8A%E7%99%BD%E6%B0%94%E7%90%83.MP41.3%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.mp4-mux.mp4
+" type="video/mp4"/>
+    					</video> 
+    	            </div>
+    	        </div>
+    		</div>
+    	</div>
+	
+	
+    
+    
+
+
+    <script>
+	<!--  js代码 -->
+	function scanMedia() {	
+		// $('#media_src').attr("src",'icon/虹烨告白气球.MP4');	
+		document.querySelector('video').load();//video重载，以免读取src失败
+		$("#mediaModal").modal('show');
+	}
+    </script>
+</body></html>
